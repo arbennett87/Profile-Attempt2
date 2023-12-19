@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile V3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="d-flex">
+        <div class="main-nav d-flex">
+            <h1>PROFILE</h1>
+            <ul class="d-flex">
+                <li><a href="#" class="nav">HOME</a></li>
+                <li><a href="#" class="nav">MY PROFILE</a></li>
+                <li><a href="#" class="nav">MY CONNECTIONS</a></li>
+            </ul>
+        </div>
+        <button class="btn-main">SIGN OUT</button>
+    </header>
+    <div class="container d-flex">
+        <main>
+            <div class="card">
+                <div class="card-header-main"></div>
+                <div class="card-body">
+                    <img src="img/jane-m.jpg" alt="profile-image" class="img-user">
+                    <h2><span id="user-name">JANE DOE</span></h2>
+                    <h4><img src="img/map-marker.png" alt="map-marker" class="img-map">SEATLE</h4>
+                    <div class="content">
+                        <p>DEVELOPER | ENGINEER | PROBLEM SOLVER</p>
+                        <p>Master of shadows and the Internet</p>
+                    </div>
+                    <img src="img/gear.png" alt="gear-icon" class="img-gear">
+                    <a href="#" class="link-edit" onclick="change_text()">EDIT PROFILE</a>
+                    <!-- <form action="form" class="form-hidden" id="hiddenForm">
+                        <input type="text" placeholder="New User Name">
+                    </form> -->
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2>EDUCATION</h2>
+                </div>
+                <div class="card-body">
+                    <h2>
+                        CODING DOJO - FULL STACK BOOTCAMP
+                    </h2>
+                    <p>
+                        Dec 2019 - Mar 2020
+                    </p>
+                    <h3>Triple Black Belt in Python, MERN, and C#</h3>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="card">
+                <div class="card-header d-flex">
+                    <span id="connection-requests-count">3</span>
+                    <h2>CONNECTION REQUESTS</h2>
+                </div>
+                <div class="card-body d-flex">
+                    <ul id="connection-list">
+                        <li> <img src="img/adrien-s.jpg" alt="" class="connection-img"><span
+                                class="connection-name">John Doe</span><button class="btn-connect"
+                                onclick="acceptRequest(this)">&#9989;</button>
+                            <button class="btn-connect" onclick="denyRequest(this)">&#10060;</button>
+                        </li>
+                        <li><img src="img/phil-s.jpg" alt="" class="connection-img"><span class="connection-name">Jane
+                                Smith</span> <button class="btn-connect" onclick="acceptRequest(this)">&#9989;</button>
+                            <button class="btn-connect" onclick="denyRequest(this)">&#10060;</button>
+                        </li>
+                        <li><img src="img/jane-m.jpg" alt="" class="connection-img"><span class="connection-name">Bob
+                                Johnson</span> <button class="btn-connect"
+                                onclick="acceptRequest(this)">&#9989;</button>
+                            <button class="btn-connect" onclick="denyRequest(this)">&#10060;</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header d-flex">
+                    <span id="your-connections-count">500</span>
+                    <h2>YOUR CONNECTIONS</h2>
+                </div>
+                <div class="card-body">
+                    <div class="yourconnections d-flex">
+                        <img src="img/adrien-s.jpg" alt="" class="connection-img">
+                        <h4 class="connect-name">ADRIEN D</h4>
+                    </div>
+                    <div class="yourconnections d-flex">
+                        <img src="img/anne-s.jpg" alt="" class="connection-img">
+                        <h4 class="connect-name">ANNE J</h4>
+                    </div>
+                    <div class="yourconnections d-flex">
+                        <img src="img/alayne-s.jpg" alt="" class="connection-img">
+                        <h4 class="connect-name">ALAYNE T</h4>
+                    </div>
+                    <div class="yourconnections d-flex">
+                        <img src="img/arry-s.jpg" alt="" class="connection-img">
+                        <h4 class="connect-name">ARRY Y</h4>
+                    </div>
+                    <div class="card-footer d-flex">
+                        <a href="#">VIEW MORE</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer class="d-flex">
+        <ul class="d-flex">
+            <li><a href="#" class="nav">HOME</a></li>
+            <li><a href="#" class="nav">MY PROFILE</a></li>
+            <li><a href="#" class="nav">MY CONNECTIONS</a></li>
+        </ul>
+        <button class="btn-main">SIGN OUT</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
